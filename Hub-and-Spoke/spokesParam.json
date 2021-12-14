@@ -1,0 +1,23 @@
+[
+    {
+        "name": "webapp1",
+        "rgName": "rg-spoke1-prod-01",
+        "rgLocation": "eastus",
+        "ipPrefix": "10.1.0.0/16",
+        "environment": "prod"
+    },
+    {
+        "name": "pe",
+        "rgName": "rg-pe-prod-01",
+        "rgLocation": "eastus",
+        "ipPrefix": "10.2.0.0/16",
+        "environment": "prod"
+    },
+    {
+        "name": "webapp1-dev",
+        "rgName": "rg-webapp1-dev-01",
+        "rgLocation": "eastus",
+        "ipPrefix": "10.3.0.0/16",
+        "environment": "dev"
+    }
+]
