@@ -17,7 +17,7 @@ param bastionSnetIpPrefix string = '10.0.202.0/24'
 param agwSnetIpPrefix string = '10.0.203.0/24'
 
 @description('The IP address prefix (CIDR range) to use when deploying the workload subnet within the virtual network.')
-param apimSnetIpPrefix string = '10.0.204.0/24'
+param workloadSnetIpPrefix string = '10.0.204.0/24'
 
 @description('The domain name label to attach to the Application Gateway\'s public IP address. This must be unique within the specified location.')
 param agwPipDnsLabel string = 'agw${uniqueString(resourceGroup().id)}'
@@ -25,8 +25,8 @@ param agwPipDnsLabel string = 'agw${uniqueString(resourceGroup().id)}'
 var hubVnetName = 'vnet-hub-prod-01'
 var agwSnetName = 'snet-agw-prod-01'
 var agwNsgName = 'nsg-agw-prod-01'
-var apimSnetName = 'snet-apim-prod-01'
-var apimNsgName = 'nsg-apim-prod-01'
+var workloadSnetName = 'snet-workload-prod-01'
+var workloadNsgName = 'nsg-workload-prod-01'
 var agwPipName = 'pip-agw-prod-01'
 
 resource hubVnet 'Microsoft.Network/virtualNetworks@2020-06-01' = {
